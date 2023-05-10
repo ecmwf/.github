@@ -23,3 +23,10 @@ body:
     attributes:
       label: Additional context
       description: Add any other context or screenshots about the feature request here.
+  - type: input
+    id: organisation
+    attributes:
+      label: Organisation
+      description: Which organisation/company are you part of?
+    validations:
+      required: false
