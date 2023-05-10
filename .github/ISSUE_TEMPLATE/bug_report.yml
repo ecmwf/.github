@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a bug in our software.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report.
+        The higher the quality of the bug report, the higher the chance that it will get fixed!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: e.g. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: In which version did you find the bug?
+      placeholder: e.g. v2.1.0
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform (OS and architecture)
+      description: Tell us the platform and the OS version that your bug occurred on.
+      placeholder: This could be the output from `uname -a` e.g. OpenSUSE 11.3 (64bit) ...
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        Actual Results: What happened when you got the bug?
+        Expected Results: What was supposed to happen?
+        Additional Information: Add anything else you feel we need to know e.g. The exact error message printed
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What are the steps to reproduce the bug?
+      description: |
+        This is the most important part of the bug report! Ask yourself “How can a developer reproduce this bug on their own computer?”
+        First reproduce the bug yourself several times. If it is not reproducible every time you can still enter a bug mentioning the intermittent nature of the bug. This is explained very well [here](https://stackoverflow.com/help/minimal-reproducible-example)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: input
+    id: data
+    attributes:
+      label: Accompanying data
+      description: Please share a link to any data files you used when reproducing the issue.
