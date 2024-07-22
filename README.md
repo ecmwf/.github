@@ -1,1 +1,3 @@
-[[./banner.png|ECMWF Banner]]
+# Welcome to ECMWF GitHub!
+
+![](./banner.png)
