@@ -1,3 +1,3 @@
-# Welcome to ECMWF GitHub!
-
 ![](./banner.png)
+
+## Welcome to ECMWF GitHub!
